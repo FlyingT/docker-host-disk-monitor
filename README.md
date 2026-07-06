@@ -1,4 +1,4 @@
-# docker-host-disk-monitor 
+# Monitor for your Docker Host Disk
 
 A lightweight, "quick & dirty" standalone Docker container that monitors your host machine's disk usage and sends an email alert via `swaks` when storage exceeds a defined threshold.  
 
