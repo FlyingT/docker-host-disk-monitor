@@ -8,7 +8,7 @@ This tool intentionally avoids a Dockerfile. It relies entirely on the docker-co
 - **Zero Maintenance**: No Dockerfile required, uses a slim Debian image.
 - **Low Footprint**: Minimal resource consumption.
 - **Flexible Configuration**: Use a `.env` file for easy setup or rely on defaults.
-- **Smart Fallbacks**: If you don't provide a `.env`, it works with sensible defaults.
+- **Smart Fallbacks**: If you don't provide a `.env`, it works with settings directly in Compose.
 
 ## How it works
 The container mounts your host's root directory (`/`) as read-only into `/host`. It periodically runs a shell loop that checks the disk percentage. If the threshold is hit, it uses `swaks` (Simple Mail Transfer Protocol and Email Transaction Exchanger) to fire off an email.
